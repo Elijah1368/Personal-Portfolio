@@ -7,8 +7,8 @@
         overflow: hidden;
 
         .imgContainer{
-            width: 800px;
-            height: 800px;
+            width: 50vw;
+            height: 50vw;
             background-color: crimson;
             border-radius: 50%;
             display: flex;
@@ -41,10 +41,38 @@
             }
             h3{
                 font-size: 30px;
+                width: 550px;
 
                 span {
                     font-size: inherit;
                     color: crimson;
+                }
+
+                .ityped-cursor {
+                    font-size: 2.2rem;
+                    opacity: 1;
+                    -webkit-animation: blink 0.3s infinite;
+                    -moz-animation: blink 0.3s infinite;
+                    animation: blink 0.3s infinite;
+                    animation-direction: alternate;
+                }
+                 
+                @keyframes blink {
+                    100% {
+                        opacity: 0;
+                    }
+                }
+                 
+                @-webkit-keyframes blink {
+                    100% {
+                        opacity: 0;
+                    }
+                }
+                 
+                @-moz-keyframes blink {
+                    100% {
+                        opacity: 0;
+                    }
                 }
             }
         }
