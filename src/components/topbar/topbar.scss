@@ -3,12 +3,53 @@
 .topbar {
     width: 100%;
     height: 70px;
-    background-color: white;
-    color: $mainColor;
+    -webkit-animation: pulse 10s infinite;
+	animation: pulse 10s infinite;
+    color: black;
     position: fixed;
     top: 0;
     z-index: 3;
     transition: all 1s ease;
+
+    @-webkit-keyframes pulse {
+        0% {
+            background: #f44336;
+        }
+        25% {
+            background: #e91e63;
+        }
+        50% {
+            background: #9c2780;
+        }
+        75% {
+            background: #673ab7;
+        }
+        100% {
+            background: #f44336;
+        }
+    }
+    @keyframes green {
+        100% {
+            background: $mainColor;
+        }
+    }
+    @keyframes pulse {
+        0% {
+            background: #f44336;
+        }
+        25% {
+            background: #e91e63;
+        }
+        50% {
+            background: #9c2780;
+        }
+        75% {
+            background: #673ab7;
+        }
+        100% {
+            background: #f44336;
+        }
+    }
 
     .wrapper {
         padding: 10px 30px;
@@ -45,7 +86,7 @@
         }
 
         .right {
-
+            
             .hamburger{
                 width: 32px;
                 height: 25px;
@@ -53,6 +94,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 cursor: pointer;
+                overflow: hidden;
 
                 span {
                     width: 100%;
@@ -68,6 +110,8 @@
     &.active{
         background-color: $mainColor;
         color: white;
+        -webkit-animation: green 10s infinite;
+        animation: green 10s infinite; 
 
         .hamburger {
             span{
