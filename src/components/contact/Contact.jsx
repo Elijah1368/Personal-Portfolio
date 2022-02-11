@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {Person, Mail} from "@material-ui/icons";
 import "./contact.scss";
 
 export default function Contact() {
@@ -14,13 +15,15 @@ export default function Contact() {
         <img src="assets/shake.svg" alt="" />
       </div>
       <div className="right">
-        <h2>Contact.</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Send</button>
-          {message && <span>Thanks, I'll reply ASAP :)</span>}
-        </form>
+        <h2>Contact Me :)</h2>
+        <div className="itemContainer">
+            <Person className="icon"></Person>
+            <span>+1 808 393 9687</span>
+        </div>
+        <div className="itemContainer">
+          <Mail className="icon"></Mail>
+          <span>elijahamian@outlook.com</span>
+        </div>
       </div>
     </div>
   );
