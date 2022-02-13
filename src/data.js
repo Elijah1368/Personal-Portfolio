@@ -5,7 +5,7 @@ export const postbookSocialMediaApp = [
       img:
         "assets/Postbook2.png",
       description:
-        "Social media app using REST Api, NodeJS, Express for back end, and ReactJS for front end", 
+        "Social media app where you can post photos and texts of yourself and see others posts in the homepage. Create your own profile and make friends! Made with REST Api, NodeJS, Express for back end, and ReactJS for front end", 
       link:
         "https://github.com/Elijah1368/Postbook"
     }

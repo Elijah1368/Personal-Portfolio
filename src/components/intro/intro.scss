@@ -32,17 +32,23 @@ $accentColor: orange;
                 align-items: flex-start;
               }
 
-            img {
-                height: 90%;
 
+        }
+        .container {
+            justify-content: center;
+            float: right;
+            img {
+                width: 27vw;
+                margin-top: 30px;
                 @include mobile{
                     height: 50%;
                   }
             }
         }
+
     }
     .right{
-        flex: .5; 
+        flex: .7; 
 
 
         .wrapper {
