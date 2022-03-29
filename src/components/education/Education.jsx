@@ -1,17 +1,17 @@
 import { useState } from "react";
 import "./education.scss";
-
+import education from "../../assets/education.png";
 export default function Education() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [
     {
       id: "1",
-      icon: "./assets/education.png",
-      title: "University of Washington Tacoma",
-      date: "January 2022 - December 2023",
+      icon: {education},
+      title: "University of Washington",
+      date: "Graduation Date: June 2023",
       desc:
-        "B.A. in Computer Science",
-      img: "http://www.southsoundtalk.com/wp-content/uploads/2017/12/uwt.jpg  "
+        "B.S. in Computer Science",
+      img: "https://lv7ms1pq6dm2sea8j1mrajzw-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/uw-seattle-1200x675.jpg"
     },
     {
       id: "2",
@@ -44,7 +44,7 @@ export default function Education() {
               <div className="left">
                 <div className="leftContainer">
                   <div className="imgContainer">
-                    <img src={d.icon} alt="" />
+                    <img src={education} alt="" />
                   </div>
                   <h2>{d.title}</h2>
                   <h5>{d.date}</h5>

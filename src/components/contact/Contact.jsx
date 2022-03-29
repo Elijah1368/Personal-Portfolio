@@ -1,18 +1,12 @@
-import { useState } from "react";
 import {Person, Mail} from "@material-ui/icons";
 import "./contact.scss";
+import shakeHands from "../../assets/shake.svg";
 
 export default function Contact() {
-  const [message, setMessage] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setMessage(true);
-  };
-  return (
+return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/shake.svg" alt="" />
+        <img src={shakeHands} alt="" />
       </div>
       <div className="right">
         <h2>Contact Me :)</h2>

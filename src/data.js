@@ -1,13 +1,14 @@
-export const postbookSocialMediaApp = [
+
+export const gameShowApp = [
     {
       id: 1,
-      title: "Postbook",
+      title: "Game Show",
       img:
-        "assets/Postbook2.png",
+        "./assets/snip1.png",
       description:
-        "Social media app where you can post photos and texts of yourself and see others posts in the homepage. Create your own profile and make friends! Made with REST Api, NodeJS, Express for back end, and ReactJS for front end", 
+        "Game Show App inspired by who wants to be a millionaire. Made by ReactJS and css", 
       link:
-        "https://github.com/Elijah1368/Postbook"
+        "https://elijah1368.github.io/react_game_show/"
     }
   ];
   
@@ -18,7 +19,7 @@ export const postbookSocialMediaApp = [
       img: "assets/NinjaFrog.png",
       description: 
       "A 2D-platformer web game inspired by Super Mario. Made with Javascript and designed with object-oriented principles.",
-      link: "https://github.com/Elijah1368/Ninja-Frog"
+      link: "https://elijah1368.github.io/Ninja-Frog/"
     }
   ];
   
@@ -31,7 +32,7 @@ export const postbookSocialMediaApp = [
       description:
       "A quote generator app that shows quotes from the show “The Office”. Made with React-Redux front end library.",
       link:
-      "https://github.com/Elijah1368/The-Office-Quotes"
+      "https://elijah1368.github.io/The-Office-Quotes/"
     }
   ];
   
