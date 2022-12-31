@@ -13,12 +13,13 @@ $accentColor: orange;
       }
 
     .left{
-        flex: 0.5;
+        flex: 0.6;
         overflow: hidden;
 
         .imgContainer{
-            width: 40vw;
-            height: 40vw;
+            width: 50vw;
+            height: 50vw;
+           
             margin-top: 10px;
             background-color: $accentColor;
             border-radius: 50%;
@@ -26,7 +27,6 @@ $accentColor: orange;
             align-items: flex-end;
             justify-content: center;
             float: right;
-            
             
             @include mobile{
                 align-items: flex-start;
@@ -38,7 +38,8 @@ $accentColor: orange;
             justify-content: center;
             float: right;
             img {
-                width: 27vw;
+                width: 43vw;
+                
                 margin-top: 30px;
                 @include mobile{
                     height: 50%;
